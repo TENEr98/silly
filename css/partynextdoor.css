@@ -1,0 +1,178 @@
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  background: #f2f2f2;
+}
+
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("../font/RobotoSlab.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto.ttf");
+}
+
+.panel_panel-default {
+  position: fixed;
+  display: flex;
+  background-color: #f50;
+  width: 200px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-shadow: 6px 0px 23px -4px rgba(0, 0, 0, 0.75);
+}
+.panel-body {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.panel-body > img {
+  width: 180px;
+  height: auto;
+}
+
+.panel-text {
+  font-size: 8px;
+  color: aliceblue;
+  width: 180px;
+  word-wrap: break-word;
+  margin: 0;
+  text-align: center;
+}
+
+.panel-text a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.big-block {
+  min-height: 500px;
+  margin-left: 200px;
+  scroll-behavior: smooth;
+}
+
+.mini-block {
+  background: #fff;
+  width: 80%;
+  margin: 30px auto;
+  margin-bottom: 30px;
+  font-family: "RobotoSlab", sans-serif;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.biography {
+  font-family: "RobotoSlab", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 0 auto;
+}
+
+.navigation {
+  background: #f50;
+  height: 60px;
+  margin: 0;
+  margin-left: 200px;
+  width: calc(100% - 200px);
+  display: flex;
+  justify-content: center;
+  line-height: 2.2;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 25px;
+}
+
+.theAlignBar > li {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+}
+.linkBankandForth:hover {
+  cursor: pointer;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  transition: 200ms ease-in-out;
+}
+
+.linkBackandForth {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: salmon;
+  margin-left: 40px;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: 300ms ease-in-out;
+  padding: 0 10px;
+}
+
+.linkBackandForth:hover {
+  background: #c74200;
+  box-shadow: inset 3px 3px 23px -4px rgba(0, 0, 0, 0.75),
+    inset -3px -3px 23px -4px rgba(0, 0, 0, 0.75);
+}
+
+.biography {
+  margin: 0;
+  width: 100%;
+}
+
+.mini-block {
+  display: flex;
+  flex-wrap: wrap;
+  scroll-behavior: smooth;
+}
+
+.mini-block p {
+  margin: 20px 30px;
+  font-size: 16px;
+}
+
+.mini-block a {
+  padding: 20px 30px;
+  font-size: 16px;
+}
+
+.linkForBio {
+  text-decoration: none;
+  width: 100%;
+  color: #f7ebeb;
+  font-size: 14px;
+}
+
+.linkforbio:hover {
+  cursor: pointer;
+}
+
+.img-biography img {
+  width: 400px;
+  height: 400px;
+}
+
+
+.biography {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.container {
+  scroll-behavior: smooth;
+}

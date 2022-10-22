@@ -1,0 +1,175 @@
+html,
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Neon_Thin";
+  src: url("../font/Neon_Thin.ttf");
+}
+
+@font-face {
+  font-family: "Neon";
+  src: url("../font/Neon.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../font/Roboto.ttf");
+}
+
+@-webkit-keyframes neon_light {
+  from {
+    text-shadow: 0 0 5px rgb(193, 223, 255), 0 0 10px rgb(193, 223, 255),
+      0 0 15px rgb(193, 223, 255), 0 0 20px #228dff, 0 0 35px #228dff,
+      0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
+  to {
+    text-shadow: 0 0 2.5px rgb(193, 223, 255), 0 0 5px rgb(193, 223, 255),
+      0 0 7.5px rgb(193, 223, 255), 0 0 10px #228dff, 0 0 17.5px #228dff,
+      0 0 20px #228dff, 0 0 25px #228dff, 0 0 23.5px #228dff;
+  }
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.content, .nav, .footer-content {
+  max-width: 80rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nav-block, .footer {
+  background-color: black;
+  margin-bottom: 1.5rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.25rem;
+}
+
+.nav-brand {
+  margin: 0;
+  font-weight: 100;
+  font-size: 3rem;
+  color: #228dff;
+  font-family: "Neon";
+  transition: 50ms ease-in-out;
+}
+
+.nav-brand:hover {
+  -webkit-animation: neon_light 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon_light 1.5s ease-in-out infinite alternate;
+  animation: neon_light 1.5s ease-in-out infinite alternate;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-list {
+  display: flex;
+  column-gap: 1.25rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #228dff;
+  font-family: "Neon_Thin";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: 50ms ease-in-out;
+}
+
+.nav-item a:hover {
+  -webkit-animation: neon_light 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon_light 1.5s ease-in-out infinite alternate;
+  animation: neon_light 1.5s ease-in-out infinite alternate;
+  color: white;
+  cursor: pointer;
+}
+
+.content-title {
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+}
+
+.content-block {
+  width: 100%;
+  height: auto;
+  display: flex;
+  column-gap: 2.125rem;
+  margin-bottom: 1.5rem;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+
+.content-image > img {
+  display: flex;
+  width: 24rem;
+}
+
+.content-text {
+  padding-right: 1.25rem;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Roboto";
+}
+
+.footer {
+  height: 5rem;
+  margin: 0;
+}
+
+.footer-content{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #228dff;
+  font-family: "Neon";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  transition: 50ms ease-in-out;
+}
+
+.footer-content a:hover {
+  -webkit-animation: neon_light 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon_light 1.5s ease-in-out infinite alternate;
+  animation: neon_light 1.5s ease-in-out infinite alternate;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .content, .nav, .footer-content {
+    width: 100%;
+  }
+  
+  .nav-block, .footer {
+    background-color: black;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .content, .nav, .footer-content {
+    width: 100%;
+  }
+  
+  .nav-block, .footer {
+    background-color: black;
+    margin-bottom: 1.5rem;
+  }
+}
